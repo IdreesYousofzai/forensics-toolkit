@@ -40,6 +40,7 @@ def clear():
     print("\n" + "=" * 64 + "\n")
 
 
+
 def prompt(text):
     return input(f"{text}: ").strip()
 
