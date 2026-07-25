@@ -153,6 +153,7 @@ def menu_keyword_search():
 
 
 # ---------------------------------------------------------------- Menu 5
+
 def menu_deleted_finder():
     clear()
     print("DELETED FILE FINDER")
