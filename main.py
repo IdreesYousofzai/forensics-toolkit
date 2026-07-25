@@ -107,6 +107,7 @@ def menu_timeline():
 
 
 # ---------------------------------------------------------------- Menu 3
+
 def menu_metadata():
     clear()
     print("METADATA EXTRACTOR")
