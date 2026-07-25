@@ -251,6 +251,7 @@ MENU_ACTIONS = {
 }
 
 
+
 def main_menu():
     global CURRENT_CASE
     while True:
