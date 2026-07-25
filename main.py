@@ -130,6 +130,7 @@ def menu_metadata():
 
 
 # ---------------------------------------------------------------- Menu 4
+
 def menu_keyword_search():
     clear()
     print("STRING / KEYWORD SEARCHER")
