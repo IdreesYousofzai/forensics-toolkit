@@ -184,6 +184,7 @@ def menu_deleted_finder():
 
 
 # ---------------------------------------------------------------- Menu 6
+
 def menu_report():
     clear()
     print("HTML REPORT GENERATOR")
