@@ -43,6 +43,7 @@ def prompt(text):
     return input(f"{text}: ").strip()
 
 
+
 def require_case():
     global CURRENT_CASE
     if CURRENT_CASE is None:
