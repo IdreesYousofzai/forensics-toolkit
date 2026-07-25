@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forensic Report - Draymond Street Warehouse Data Breach</title>
+<style>
+body { font-family: 'Segoe UI', Arial, sans-serif; background:#f4f5f7; color:#1f2430; margin:0; padding:0; }
+.container { max-width: 960px; margin: 0 auto; padding: 32px 24px 64px; }
+header { background:#1f2937; color:#fff; padding:28px 24px; }
+header h1 { margin:0 0 6px; font-size:1.6em; }
+header .meta { color:#cbd5e1; font-size:0.95em; }
+.meta-table { width:100%; border-collapse:collapse; margin:24px 0; }
+.meta-table td { padding:6px 10px; border-bottom:1px solid #e2e4e9; font-size:0.95em; }
+.meta-table td:first-child { font-weight:600; width:180px; color:#4b5563; }
+section { background:#fff; border:1px solid #e2e4e9; border-radius:8px; padding:20px 24px; margin-bottom:22px; }
+section h2 { margin-top:0; font-size:1.15em; border-bottom:2px solid #1f2937; padding-bottom:8px; }
+table.data { width:100%; border-collapse:collapse; margin-top:12px; font-size:0.88em; }
+table.data th { background:#1f2937; color:#fff; text-align:left; padding:8px 10px; }
+table.data td { padding:7px 10px; border-bottom:1px solid #eceef1; vertical-align:top; word-break:break-word; }
+table.data tr:nth-child(even) { background:#fafbfc; }
+.badge-match { color:#0a7a2f; font-weight:600; }
+.badge-fail { color:#b3261e; font-weight:600; }
+.summary-line { color:#4b5563; font-size:0.92em; margin-bottom:10px; }
+footer { text-align:center; color:#9aa0ab; font-size:0.8em; margin-top:30px; }
+</style>
+</head>
+<body>
+<header>
+    <h1>Digital Forensics Investigation Report</h1>
+    <div class="meta">Case: Draymond Street Warehouse Data Breach (2026-014)</div>
+</header>
+<div class="container">
+    <table class="meta-table">
+        <tr><td>Case Name</td><td>Draymond Street Warehouse Data Breach</td></tr>
+        <tr><td>Case Number</td><td>2026-014</td></tr>
+        <tr><td>Investigator</td><td>Idrees Yousofzai</td></tr>
+        <tr><td>Case Opened</td><td>2026-07-25T10:18:12</td></tr>
+        <tr><td>Report Generated</td><td>2026-07-25 10:18:12</td></tr>
+        <tr><td>Total Findings</td><td>7</td></tr>
+    </table>
+    
+            <section>
+                <h2>1. Hash Verifier</h2>
+                <p class="summary-line">Baseline hashes for server_access.log &mdash; recorded 2026-07-25T10:18:12</p>
+                <table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\server_access.log</td></tr><tr><td>size_bytes</td><td>514</td></tr><tr><td>md5</td><td>4006186ba659efa2c721ed97d0103318</td></tr><tr><td>sha256</td><td>e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b</td></tr></tbody></table>
+            </section>
+            <section>
+                <h2>2. Hash Verifier</h2>
+                <p class="summary-line">Chain-of-custody re-verification &mdash; recorded 2026-07-25T10:18:12</p>
+                <table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\server_access.log</td></tr><tr><td>algorithm</td><td>SHA256</td></tr><tr><td>known_hash</td><td>e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b</td></tr><tr><td>computed_hash</td><td>e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b</td></tr><tr><td>match</td><td>True</td></tr></tbody></table><p class="badge-match">INTEGRITY VERIFIED - file unchanged</p>
+            </section>
+            <section>
+                <h2>3. Timeline Generator</h2>
+                <p class="summary-line">Timeline of 7 files &mdash; recorded 2026-07-25T10:18:12</p>
+                <table class="data"><thead><tr><th>file</th><th>size_bytes</th><th>created</th><th>metadata_changed</th><th>modified</th><th>accessed</th></tr></thead><tbody><tr><td>witness_statement.txt</td><td>474</td><td>None</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:43</td></tr><tr><td>server_access.log</td><td>514</td><td>None</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:43</td></tr><tr><td>internal_memo.txt</td><td>431</td><td>None</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:12</td><td>2026-07-25 10:16:43</td></tr><tr><td>cctv_frame_2340.jpg</td><td>17174</td><td>None</td><td>2026-07-25 10:16:25</td><td>2026-07-25 10:16:25</td><td>2026-07-25 10:16:32</td></tr><tr><td>incident_report_draft.pdf</td><td>1528</td><td>None</td><td>2026-07-25 10:16:25</td><td>2026-07-25 10:16:25</td><td>2026-07-25 10:16:32</td></tr><tr><td>hidden_notes.txt</td><td>17174</td><td>None</td><td>2026-07-25 10:16:32</td><td>2026-07-25 10:16:32</td><td>2026-07-25 10:16:43</td></tr><tr><td>disk_image_unallocated.bin</td><td>7748</td><td>None</td><td>2026-07-25 10:16:32</td><td>2026-07-25 10:16:32</td><td>2026-07-25 10:16:43</td></tr></tbody></table>
+            </section>
+            <section>
+                <h2>4. Metadata Extractor</h2>
+                <p class="summary-line">Batch metadata for 7 files &mdash; recorded 2026-07-25T10:18:12</p>
+                <h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\internal_memo.txt</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\internal_memo.txt</td></tr><tr><td>extension</td><td>.txt</td></tr><tr><td>size_bytes</td><td>431</td></tr><tr><td>modified</td><td>2026-07-25 10:16:12</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:43</td></tr></tbody></table><table class="data"><tbody><tr><td>line_count</td><td>8</td></tr><tr><td>word_count</td><td>60</td></tr><tr><td>char_count</td><td>431</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\cctv_frame_2340.jpg</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\cctv_frame_2340.jpg</td></tr><tr><td>extension</td><td>.jpg</td></tr><tr><td>size_bytes</td><td>17174</td></tr><tr><td>modified</td><td>2026-07-25 10:16:25</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:32</td></tr></tbody></table><table class="data"><tbody><tr><td>dimensions</td><td>320x240</td></tr><tr><td>format</td><td>JPEG</td></tr><tr><td>mode</td><td>RGB</td></tr><tr><td>exif</td><td>No EXIF data present</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\witness_statement.txt</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\witness_statement.txt</td></tr><tr><td>extension</td><td>.txt</td></tr><tr><td>size_bytes</td><td>474</td></tr><tr><td>modified</td><td>2026-07-25 10:16:12</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:43</td></tr></tbody></table><table class="data"><tbody><tr><td>line_count</td><td>11</td></tr><tr><td>word_count</td><td>86</td></tr><tr><td>char_count</td><td>474</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\disk_image_unallocated.bin</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\disk_image_unallocated.bin</td></tr><tr><td>extension</td><td>.bin</td></tr><tr><td>size_bytes</td><td>7748</td></tr><tr><td>modified</td><td>2026-07-25 10:16:32</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:43</td></tr></tbody></table><table class="data"><tbody><tr><td>note</td><td>No type-specific extractor for this file type</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\hidden_notes.txt</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\hidden_notes.txt</td></tr><tr><td>extension</td><td>.txt</td></tr><tr><td>size_bytes</td><td>17174</td></tr><tr><td>modified</td><td>2026-07-25 10:16:32</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:43</td></tr></tbody></table><table class="data"><tbody><tr><td>line_count</td><td>109</td></tr><tr><td>word_count</td><td>818</td></tr><tr><td>char_count</td><td>16316</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\incident_report_draft.pdf</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\incident_report_draft.pdf</td></tr><tr><td>extension</td><td>.pdf</td></tr><tr><td>size_bytes</td><td>1528</td></tr><tr><td>modified</td><td>2026-07-25 10:16:25</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:32</td></tr></tbody></table><table class="data"><tbody><tr><td>page_count</td><td>1</td></tr><tr><td>title</td><td>Incident Report Draft</td></tr><tr><td>author</td><td>J. Marsh</td></tr><tr><td>producer</td><td>ReportLab PDF Library - (opensource)</td></tr><tr><td>creation_date</td><td>D:20260725101625+00&#x27;00&#x27;</td></tr></tbody></table><h3 style='margin-bottom:4px'>\forensics-toolkit\evidence_sample\server_access.log</h3><table class="data"><tbody><tr><td>file</td><td>\forensics-toolkit\evidence_sample\server_access.log</td></tr><tr><td>extension</td><td>.log</td></tr><tr><td>size_bytes</td><td>514</td></tr><tr><td>modified</td><td>2026-07-25 10:16:12</td></tr><tr><td>accessed</td><td>2026-07-25 10:16:43</td></tr></tbody></table><table class="data"><tbody><tr><td>line_count</td><td>6</td></tr><tr><td>word_count</td><td>60</td></tr><tr><td>char_count</td><td>514</td></tr></tbody></table>
+            </section>
+            <section>
+                <h2>5. Keyword Searcher</h2>
+                <p class="summary-line">10 keyword matches &mdash; recorded 2026-07-25T10:18:12</p>
+                <p class="summary-line">Files scanned: 3 | Files skipped: 4 | Total matches: 10</p><table class="data"><thead><tr><th>file</th><th>line_number</th><th>line_text</th><th>keyword</th></tr></thead><tbody><tr><td>internal_memo.txt</td><td>5</td><td>against the admin panel from internal IP 192.168.1.14, followed by a</td><td>192.168.1.14</td></tr><tr><td>internal_memo.txt</td><td>8</td><td>and password reset for the admin account. Suspected credential: falcon2024</td><td>falcon2024</td></tr><tr><td>witness_statement.txt</td><td>7</td><td>the plate but I believe it started with LK19.</td><td>LK19</td></tr><tr><td>witness_statement.txt</td><td>9</td><td>The password mentioned on the phone call sounded like &quot;falcon2024&quot; but</td><td>falcon2024</td></tr><tr><td>server_access.log</td><td>1</td><td>192.168.1.14 - - [14/Oct/2026:23:31:02 +0100] &quot;GET /admin/login HTTP/1.1&quot; 200 512</td><td>192.168.1.14</td></tr><tr><td>server_access.log</td><td>2</td><td>192.168.1.14 - - [14/Oct/2026:23:31:47 +0100] &quot;POST /admin/login HTTP/1.1&quot; 401 128</td><td>192.168.1.14</td></tr><tr><td>server_access.log</td><td>3</td><td>192.168.1.14 - - [14/Oct/2026:23:32:03 +0100] &quot;POST /admin/login HTTP/1.1&quot; 401 128</td><td>192.168.1.14</td></tr><tr><td>server_access.log</td><td>4</td><td>192.168.1.14 - - [14/Oct/2026:23:32:19 +0100] &quot;POST /admin/login HTTP/1.1&quot; 200 890</td><td>192.168.1.14</td></tr><tr><td>server_access.log</td><td>5</td><td>192.168.1.14 - - [14/Oct/2026:23:33:01 +0100] &quot;GET /admin/export?table=customers HTTP/1.1&quot; 200 40213</td><td>192.168.1.14</td></tr><tr><td>server_access.log</td><td>6</td><td>192.168.1.14 - - [14/Oct/2026:23:41:55 +0100] &quot;GET /admin/logout HTTP/1.1&quot; 200 64</td><td>192.168.1.14</td></tr></tbody></table>
+            </section>
+            <section>
+                <h2>6. Deleted File Finder</h2>
+                <p class="summary-line">3 signatures carved &mdash; recorded 2026-07-25T10:18:12</p>
+                <p class="summary-line">Scanned \forensics-toolkit\evidence_sample\disk_image_unallocated.bin (7748 bytes) | Signatures found: 3</p><table class="data"><thead><tr><th>offset_hex</th><th>offset_decimal</th><th>signature_type</th><th>likely_extension</th><th>signature_hex</th></tr></thead><tbody><tr><td>0x1f4</td><td>500</td><td>JPEG</td><td>.jpg</td><td>FFD8FF</td></tr><tr><td>0x10cc</td><td>4300</td><td>PDF</td><td>.pdf</td><td>25504446</td></tr><tr><td>0x1b80</td><td>7040</td><td>PNG</td><td>.png</td><td>89504E470D0A1A0A</td></tr></tbody></table>
+            </section>
+            <section>
+                <h2>7. Deleted File Finder</h2>
+                <p class="summary-line">1 mismatches found &mdash; recorded 2026-07-25T10:18:12</p>
+                <p class="summary-line">Folder: \forensics-toolkit\evidence_sample | Mismatches found: 1</p><table class="data"><thead><tr><th>file</th><th>claimed_extension</th><th>detected_type</th><th>expected_extension</th><th>flag</th></tr></thead><tbody><tr><td>hidden_notes.txt</td><td>.txt</td><td>JPEG</td><td>.jpg</td><td>MISMATCH - possible disguised or renamed file</td></tr></tbody></table>
+            </section>
+    <footer>Generated by the Digital Forensics Investigation Toolkit</footer>
+</div>
+</body>
+</html>

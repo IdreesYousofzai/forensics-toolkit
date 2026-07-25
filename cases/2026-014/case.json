@@ -1,0 +1,331 @@
+{
+  "case_name": "Draymond Street Warehouse Data Breach",
+  "case_number": "2026-014",
+  "investigator": "Idrees Yousofzai",
+  "created": "2026-07-25T10:18:12",
+  "findings": [
+    {
+      "module": "hash_verifier",
+      "summary": "Baseline hashes for server_access.log",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": {
+        "file": "/home/claude/forensics-toolkit/evidence_sample/server_access.log",
+        "size_bytes": 514,
+        "md5": "4006186ba659efa2c721ed97d0103318",
+        "sha256": "e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b"
+      }
+    },
+    {
+      "module": "hash_verifier",
+      "summary": "Chain-of-custody re-verification",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": {
+        "file": "/home/claude/forensics-toolkit/evidence_sample/server_access.log",
+        "algorithm": "SHA256",
+        "known_hash": "e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b",
+        "computed_hash": "e4d626c55219cde83a062acee15e75976209c0972bb82f1602181daa6fb52c2b",
+        "match": true,
+        "verdict": "INTEGRITY VERIFIED - file unchanged"
+      }
+    },
+    {
+      "module": "timeline_generator",
+      "summary": "Timeline of 7 files",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": [
+        {
+          "file": "witness_statement.txt",
+          "size_bytes": 474,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:12",
+          "modified": "2026-07-25 10:16:12",
+          "accessed": "2026-07-25 10:16:43"
+        },
+        {
+          "file": "server_access.log",
+          "size_bytes": 514,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:12",
+          "modified": "2026-07-25 10:16:12",
+          "accessed": "2026-07-25 10:16:43"
+        },
+        {
+          "file": "internal_memo.txt",
+          "size_bytes": 431,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:12",
+          "modified": "2026-07-25 10:16:12",
+          "accessed": "2026-07-25 10:16:43"
+        },
+        {
+          "file": "cctv_frame_2340.jpg",
+          "size_bytes": 17174,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:25",
+          "modified": "2026-07-25 10:16:25",
+          "accessed": "2026-07-25 10:16:32"
+        },
+        {
+          "file": "incident_report_draft.pdf",
+          "size_bytes": 1528,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:25",
+          "modified": "2026-07-25 10:16:25",
+          "accessed": "2026-07-25 10:16:32"
+        },
+        {
+          "file": "hidden_notes.txt",
+          "size_bytes": 17174,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:32",
+          "modified": "2026-07-25 10:16:32",
+          "accessed": "2026-07-25 10:16:43"
+        },
+        {
+          "file": "disk_image_unallocated.bin",
+          "size_bytes": 7748,
+          "created": null,
+          "metadata_changed": "2026-07-25 10:16:32",
+          "modified": "2026-07-25 10:16:32",
+          "accessed": "2026-07-25 10:16:43"
+        }
+      ]
+    },
+    {
+      "module": "metadata_extractor",
+      "summary": "Batch metadata for 7 files",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": [
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/internal_memo.txt",
+            "extension": ".txt",
+            "size_bytes": 431,
+            "modified": "2026-07-25 10:16:12",
+            "accessed": "2026-07-25 10:16:43"
+          },
+          "type": "text",
+          "type_specific": {
+            "line_count": 8,
+            "word_count": 60,
+            "char_count": 431
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/cctv_frame_2340.jpg",
+            "extension": ".jpg",
+            "size_bytes": 17174,
+            "modified": "2026-07-25 10:16:25",
+            "accessed": "2026-07-25 10:16:32"
+          },
+          "type": "image",
+          "type_specific": {
+            "dimensions": "320x240",
+            "format": "JPEG",
+            "mode": "RGB",
+            "exif": "No EXIF data present"
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/witness_statement.txt",
+            "extension": ".txt",
+            "size_bytes": 474,
+            "modified": "2026-07-25 10:16:12",
+            "accessed": "2026-07-25 10:16:43"
+          },
+          "type": "text",
+          "type_specific": {
+            "line_count": 11,
+            "word_count": 86,
+            "char_count": 474
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/disk_image_unallocated.bin",
+            "extension": ".bin",
+            "size_bytes": 7748,
+            "modified": "2026-07-25 10:16:32",
+            "accessed": "2026-07-25 10:16:43"
+          },
+          "type": "unknown",
+          "type_specific": {
+            "note": "No type-specific extractor for this file type"
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/hidden_notes.txt",
+            "extension": ".txt",
+            "size_bytes": 17174,
+            "modified": "2026-07-25 10:16:32",
+            "accessed": "2026-07-25 10:16:43"
+          },
+          "type": "text",
+          "type_specific": {
+            "line_count": 109,
+            "word_count": 818,
+            "char_count": 16316
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/incident_report_draft.pdf",
+            "extension": ".pdf",
+            "size_bytes": 1528,
+            "modified": "2026-07-25 10:16:25",
+            "accessed": "2026-07-25 10:16:32"
+          },
+          "type": "pdf",
+          "type_specific": {
+            "page_count": 1,
+            "title": "Incident Report Draft",
+            "author": "J. Marsh",
+            "producer": "ReportLab PDF Library - (opensource)",
+            "creation_date": "D:20260725101625+00'00'"
+          }
+        },
+        {
+          "general": {
+            "file": "/home/claude/forensics-toolkit/evidence_sample/server_access.log",
+            "extension": ".log",
+            "size_bytes": 514,
+            "modified": "2026-07-25 10:16:12",
+            "accessed": "2026-07-25 10:16:43"
+          },
+          "type": "text",
+          "type_specific": {
+            "line_count": 6,
+            "word_count": 60,
+            "char_count": 514
+          }
+        }
+      ]
+    },
+    {
+      "module": "keyword_searcher",
+      "summary": "10 keyword matches",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": {
+        "matches": [
+          {
+            "file": "internal_memo.txt",
+            "line_number": 5,
+            "line_text": "against the admin panel from internal IP 192.168.1.14, followed by a",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "internal_memo.txt",
+            "line_number": 8,
+            "line_text": "and password reset for the admin account. Suspected credential: falcon2024",
+            "keyword": "falcon2024"
+          },
+          {
+            "file": "witness_statement.txt",
+            "line_number": 7,
+            "line_text": "the plate but I believe it started with LK19.",
+            "keyword": "LK19"
+          },
+          {
+            "file": "witness_statement.txt",
+            "line_number": 9,
+            "line_text": "The password mentioned on the phone call sounded like \"falcon2024\" but",
+            "keyword": "falcon2024"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 1,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:31:02 +0100] \"GET /admin/login HTTP/1.1\" 200 512",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 2,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:31:47 +0100] \"POST /admin/login HTTP/1.1\" 401 128",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 3,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:32:03 +0100] \"POST /admin/login HTTP/1.1\" 401 128",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 4,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:32:19 +0100] \"POST /admin/login HTTP/1.1\" 200 890",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 5,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:33:01 +0100] \"GET /admin/export?table=customers HTTP/1.1\" 200 40213",
+            "keyword": "192.168.1.14"
+          },
+          {
+            "file": "server_access.log",
+            "line_number": 6,
+            "line_text": "192.168.1.14 - - [14/Oct/2026:23:41:55 +0100] \"GET /admin/logout HTTP/1.1\" 200 64",
+            "keyword": "192.168.1.14"
+          }
+        ],
+        "files_scanned": 3,
+        "files_skipped": 4,
+        "total_matches": 10
+      }
+    },
+    {
+      "module": "deleted_file_finder",
+      "summary": "3 signatures carved",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": {
+        "scanned_file": "/home/claude/forensics-toolkit/evidence_sample/disk_image_unallocated.bin",
+        "size_bytes": 7748,
+        "signatures_found": [
+          {
+            "offset_hex": "0x1f4",
+            "offset_decimal": 500,
+            "signature_type": "JPEG",
+            "likely_extension": ".jpg",
+            "signature_hex": "FFD8FF"
+          },
+          {
+            "offset_hex": "0x10cc",
+            "offset_decimal": 4300,
+            "signature_type": "PDF",
+            "likely_extension": ".pdf",
+            "signature_hex": "25504446"
+          },
+          {
+            "offset_hex": "0x1b80",
+            "offset_decimal": 7040,
+            "signature_type": "PNG",
+            "likely_extension": ".png",
+            "signature_hex": "89504E470D0A1A0A"
+          }
+        ],
+        "total_found": 3
+      }
+    },
+    {
+      "module": "deleted_file_finder",
+      "summary": "1 mismatches found",
+      "timestamp": "2026-07-25T10:18:12",
+      "data": {
+        "folder": "/home/claude/forensics-toolkit/evidence_sample",
+        "mismatches": [
+          {
+            "file": "hidden_notes.txt",
+            "claimed_extension": ".txt",
+            "detected_type": "JPEG",
+            "expected_extension": ".jpg",
+            "flag": "MISMATCH - possible disguised or renamed file"
+          }
+        ],
+        "total_mismatches": 1
+      }
+    }
+  ]
+}

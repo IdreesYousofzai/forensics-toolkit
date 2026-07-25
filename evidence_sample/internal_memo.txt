@@ -1,0 +1,8 @@
+INTERNAL MEMO - IT Security Team
+Subject: Suspicious login activity flagged
+
+The overnight monitoring system flagged repeated failed login attempts
+against the admin panel from internal IP 192.168.1.14, followed by a
+successful login and an export of the customers table. This falls
+outside the normal maintenance window. Recommend immediate investigation
+and password reset for the admin account. Suspected credential: falcon2024
