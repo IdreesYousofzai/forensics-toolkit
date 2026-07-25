@@ -61,6 +61,7 @@ def record(module_name, summary, data):
 
 
 # ---------------------------------------------------------------- Menu 1
+
 def menu_hash_verifier():
     clear()
     print("HASH VERIFIER")
