@@ -204,6 +204,7 @@ def menu_report():
 
 
 # ---------------------------------------------------------------- Menu 7
+
 def menu_case_manager():
     global CURRENT_CASE
     clear()
