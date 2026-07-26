@@ -35,7 +35,6 @@ from modules import (
 CURRENT_CASE = None  # holds a case_number string once a case is open
 
 
-
 def clear():
     print("\n" + "=" * 64 + "\n")
 
