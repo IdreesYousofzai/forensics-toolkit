@@ -25,6 +25,7 @@ def _fmt(ts):
     return datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
 
 
+
 def generate_timeline(folder_path):
     """
     Walk a folder recursively and return a list of file records sorted
