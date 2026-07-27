@@ -11,6 +11,7 @@ import hashlib
 import os
 
 
+
 def _hash_file(path, algo_name):
     hasher = hashlib.new(algo_name)
     with open(path, "rb") as f:
