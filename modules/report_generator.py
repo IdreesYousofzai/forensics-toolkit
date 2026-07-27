@@ -45,6 +45,7 @@ def _dict_table(d):
     return f'<table class="data"><tbody>{rows}</tbody></table>'
 
 
+
 def _list_of_dicts_table(items):
     if not items:
         return "<p class='summary-line'>No results.</p>"
