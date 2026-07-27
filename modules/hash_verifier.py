@@ -20,6 +20,7 @@ def _hash_file(path, algo_name):
     return hasher.hexdigest()
 
 
+
 def generate_hashes(path):
     """Return a dict with md5 and sha256 hashes for the given file."""
     if not os.path.isfile(path):
