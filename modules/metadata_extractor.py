@@ -46,6 +46,7 @@ def _general_metadata(path):
     }
 
 
+
 def _image_metadata(path):
     if not HAVE_PIL:
         return {"note": "Pillow not installed - install with: pip install Pillow --break-system-packages"}
