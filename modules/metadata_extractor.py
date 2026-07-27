@@ -75,6 +75,7 @@ def _image_metadata(path):
     return info
 
 
+
 def _pdf_metadata(path):
     if not HAVE_PYPDF:
         return {"note": "pypdf not installed - install with: pip install pypdf --break-system-packages"}
