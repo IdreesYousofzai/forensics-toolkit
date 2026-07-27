@@ -28,6 +28,7 @@ def _is_probably_text(path):
         return False
 
 
+
 def search_keywords(folder_path, keywords, case_sensitive=False):
     """
     Search every text file under folder_path for each keyword.
