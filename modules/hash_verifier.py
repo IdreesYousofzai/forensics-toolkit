@@ -34,6 +34,7 @@ def generate_hashes(path):
     }
 
 
+
 def verify_hash(path, known_hash):
     """
     Compare a file's hash against a known hash string. Auto-detects
