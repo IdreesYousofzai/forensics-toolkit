@@ -34,6 +34,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".tiff", ".bmp", ".gif"}
 TEXT_EXTS = {".txt", ".log", ".csv", ".md", ".json", ".xml", ".html", ".py"}
 
 
+
 def _general_metadata(path):
     st = os.stat(path)
     return {
