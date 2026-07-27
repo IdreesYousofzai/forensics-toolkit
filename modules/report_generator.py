@@ -39,6 +39,7 @@ def _esc(v):
     return html.escape(str(v))
 
 
+
 def _dict_table(d):
     rows = "".join(f"<tr><td>{_esc(k)}</td><td>{_esc(v)}</td></tr>" for k, v in d.items())
     return f'<table class="data"><tbody>{rows}</tbody></table>'
