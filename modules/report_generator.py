@@ -34,6 +34,7 @@ footer { text-align:center; color:#9aa0ab; font-size:0.8em; margin-top:30px; }
 """
 
 
+
 def _esc(v):
     return html.escape(str(v))
 
