@@ -94,6 +94,7 @@ def _pdf_metadata(path):
     return info
 
 
+
 def _text_metadata(path):
     info = {}
     try:
