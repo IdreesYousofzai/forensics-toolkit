@@ -58,6 +58,7 @@ def _list_of_dicts_table(items):
     return f'<table class="data"><thead><tr>{header}</tr></thead><tbody>{body_rows}</tbody></table>'
 
 
+
 def _render_finding_body(finding):
     """Render a single finding's data into HTML depending on its shape."""
     data = finding["data"]
