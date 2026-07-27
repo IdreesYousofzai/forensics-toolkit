@@ -111,6 +111,7 @@ def _render_finding_body(finding):
     return f"<p>{_esc(data)}</p>"
 
 
+
 def generate_case_report(case_data, output_path):
     """
     Build a full HTML report covering every finding recorded against a
