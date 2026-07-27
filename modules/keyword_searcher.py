@@ -17,6 +17,7 @@ import os
 MAX_FILE_SIZE_BYTES = 20 * 1024 * 1024  # 20 MB
 
 
+
 def _is_probably_text(path):
     try:
         with open(path, "rb") as f:
