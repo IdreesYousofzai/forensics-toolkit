@@ -68,6 +68,7 @@ def _render_finding_body(finding):
         return _dict_table(data)
 
     if module == "timeline_generator":
+        
         return _list_of_dicts_table(data)
 
     if module == "metadata_extractor":
