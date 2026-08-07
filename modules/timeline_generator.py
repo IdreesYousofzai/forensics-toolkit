@@ -41,6 +41,7 @@ def generate_timeline(folder_path):
     records = []
     for root, _dirs, files in os.walk(folder_path):
         for name in files:
+            
             full_path = os.path.join(root, name)
             try:
                 st = os.stat(full_path)
