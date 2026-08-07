@@ -50,6 +50,7 @@ def _image_metadata(path):
 
     info = {}
     try:
+      
         with Image.open(path) as img:
             info["dimensions"] = f"{img.width}x{img.height}"
             info["format"] = img.format
