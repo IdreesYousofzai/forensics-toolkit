@@ -29,6 +29,7 @@ def create_case(case_name, case_number, investigator):
     """Create a new case folder and its case.json metadata file."""
     folder = _case_folder(case_number)
     if os.path.exists(folder):
+        
         raise FileExistsError(f"Case number '{case_number}' already exists.")
 
     os.makedirs(folder)
