@@ -56,6 +56,7 @@ def list_cases():
 
     summaries = []
     for entry in sorted(os.listdir(CASES_DIR)):
+        
         case_file = _case_file(entry)
         if os.path.isfile(case_file):
             with open(case_file) as f:
