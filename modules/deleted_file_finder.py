@@ -69,6 +69,7 @@ def carve_signatures(blob_path):
     }
 
 
+
 def find_mismatched_signatures(folder_path):
     """
     Check every file in a folder: does its extension match what its
