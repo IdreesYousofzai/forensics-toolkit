@@ -35,6 +35,7 @@ def generate_timeline(folder_path):
     signal), each with created/modified/accessed timestamps.
     """
     if not os.path.isdir(folder_path):
+        
         raise NotADirectoryError(f"Not a valid folder: {folder_path}")
 
     records = []
