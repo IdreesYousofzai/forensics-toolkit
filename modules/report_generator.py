@@ -34,17 +34,13 @@ footer { text-align:center; color:#9aa0ab; font-size:0.8em; margin-top:30px; }
 """
 
 
-
 def _esc(v):
-    
     return html.escape(str(v))
-
 
 
 def _dict_table(d):
     rows = "".join(f"<tr><td>{_esc(k)}</td><td>{_esc(v)}</td></tr>" for k, v in d.items())
     return f'<table class="data"><tbody>{rows}</tbody></table>'
-
 
 
 def _list_of_dicts_table(items):
@@ -57,8 +53,6 @@ def _list_of_dicts_table(items):
         cells = "".join(f"<td>{_esc(item.get(c, ''))}</td>" for c in columns)
         body_rows += f"<tr>{cells}</tr>"
     return f'<table class="data"><thead><tr>{header}</tr></thead><tbody>{body_rows}</tbody></table>'
-
-
 
 def _render_finding_body(finding):
     """Render a single finding's data into HTML depending on its shape."""
@@ -110,7 +104,6 @@ def _render_finding_body(finding):
     if isinstance(data, dict):
         return _dict_table(data)
     return f"<p>{_esc(data)}</p>"
-
 
 
 def generate_case_report(case_data, output_path):
