@@ -79,6 +79,7 @@ def _pdf_metadata(path):
 
     info = {}
     try:
+      
         reader = PdfReader(path)
         info["page_count"] = len(reader.pages)
         meta = reader.metadata or {}
