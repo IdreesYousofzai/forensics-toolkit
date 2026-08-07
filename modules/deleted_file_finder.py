@@ -39,6 +39,7 @@ def carve_signatures(blob_path):
     file fragments.
     """
     if not os.path.isfile(blob_path):
+       
         raise FileNotFoundError(f"File not found: {blob_path}")
 
     with open(blob_path, "rb") as f:
