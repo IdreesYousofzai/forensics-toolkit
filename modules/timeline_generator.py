@@ -60,6 +60,7 @@ def generate_timeline(folder_path):
 
     records.sort(key=lambda r: r["_sort_key"])
     for r in records:
+        
         del r["_sort_key"]
 
     return records
