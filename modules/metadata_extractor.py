@@ -34,9 +34,7 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".tiff", ".bmp", ".gif"}
 TEXT_EXTS = {".txt", ".log", ".csv", ".md", ".json", ".xml", ".html", ".py"}
 
 
-
 def _general_metadata(path):
-  
     st = os.stat(path)
     return {
         "file": os.path.abspath(path),
@@ -45,8 +43,6 @@ def _general_metadata(path):
         "modified": datetime.fromtimestamp(st.st_mtime).strftime("%Y-%m-%d %H:%M:%S"),
         "accessed": datetime.fromtimestamp(st.st_atime).strftime("%Y-%m-%d %H:%M:%S"),
     }
-
-
 
 def _image_metadata(path):
     if not HAVE_PIL:
@@ -76,7 +72,6 @@ def _image_metadata(path):
     return info
 
 
-
 def _pdf_metadata(path):
     if not HAVE_PYPDF:
         return {"note": "pypdf not installed - install with: pip install pypdf --break-system-packages"}
@@ -93,7 +88,6 @@ def _pdf_metadata(path):
     except Exception as e:
         info["error"] = f"Could not read PDF: {e}"
     return info
-
 
 
 def _text_metadata(path):
@@ -134,7 +128,6 @@ def extract_metadata(path):
         result["type_specific"] = {"note": "No type-specific extractor for this file type"}
 
     return result
-
 
 
 def extract_metadata_batch(folder_path):
