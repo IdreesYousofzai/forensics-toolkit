@@ -135,6 +135,7 @@ def extract_metadata(path):
 def extract_metadata_batch(folder_path):
     """Run extract_metadata over every file in a folder (recursively)."""
     if not os.path.isdir(folder_path):
+      
         raise NotADirectoryError(f"Not a valid folder: {folder_path}")
 
     results = []
