@@ -50,6 +50,7 @@ def _list_of_dicts_table(items):
     header = "".join(f"<th>{_esc(c)}</th>" for c in columns)
     body_rows = ""
     for item in items:
+        
         cells = "".join(f"<td>{_esc(item.get(c, ''))}</td>" for c in columns)
         body_rows += f"<tr>{cells}</tr>"
     return f'<table class="data"><thead><tr>{header}</tr></thead><tbody>{body_rows}</tbody></table>'
