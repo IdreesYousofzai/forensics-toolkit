@@ -139,6 +139,7 @@ def menu_keyword_search():
     raw_keywords = prompt("Keywords (comma separated)")
     keywords = [k.strip() for k in raw_keywords.split(",") if k.strip()]
     try:
+      
         result = keyword_searcher.search_keywords(folder, keywords)
         print(f"\nScanned {result['files_scanned']} files, skipped {result['files_skipped']} "
               f"(binary/oversized). Total matches: {result['total_matches']}\n")
