@@ -164,6 +164,7 @@ def menu_deleted_finder():
     choice = prompt("Choose 1 or 2")
     try:
         if choice == "1":
+          
             path = prompt("Path to binary blob / disk image file")
             result = deleted_file_finder.carve_signatures(path)
             print(f"\nScanned {result['size_bytes']} bytes. Found {result['total_found']} signature(s):\n")
