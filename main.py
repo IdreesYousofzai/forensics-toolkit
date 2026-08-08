@@ -55,6 +55,7 @@ def require_case():
 def record(module_name, summary, data):
     """Save a module's output against the currently open case."""
     if CURRENT_CASE:
+      
         case_manager.add_finding(CURRENT_CASE, module_name, summary, data)
         print(f"[Saved to case {CURRENT_CASE}]")
 
